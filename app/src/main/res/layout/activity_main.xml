@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/menu_empresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_title"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton_servicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/menu_servico"
+        app:layout_constraintStart_toStartOf="@+id/imageView_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_clientes"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/menu_contato"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_empresa"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton_clientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/menu_cliente"
+        app:layout_constraintStart_toStartOf="@+id/imageView_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_title"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
